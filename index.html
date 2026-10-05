@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Дарья — Ретушь фотографий</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="#" class="logo">Дарья</a>
+      <nav class="nav">
+        <a href="#works">Работы</a>
+        <a href="#about">Обо мне</a>
+        <a href="#contact" class="btn btn-nav">Связаться</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Меню">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <p class="hero-label">Ретушь · Фотография · Цветокоррекция</p>
+          <h1>Привет, меня зовут <span>Дарья</span></h1>
+          <p class="hero-desc">
+            Я специализируюсь на ретуши фотографий для любых задач.  
+            Опыт — 1,5 года. Основные инструменты: Photoshop, Lightroom, ChatGPT.
+          </p>
+          <div class="hero-actions">
+            <a href="#works" class="btn btn-primary">Смотреть работы</a>
+            <a href="https://t.me/yyeessww" target="_blank" rel="noopener" class="btn btn-outline">Написать в Telegram</a>
+          </div>
+        </div>
+        <div class="hero-photo">
+          <img src="IMG_1292.jpg" alt="Дарья — ретушёр" loading="eager">
+        </div>
+      </div>
+      <div class="hero-bg"></div>
+    </section>
+
+    <section id="about" class="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-text">
+            <h2>Обо мне</h2>
+            <p>
+              Работаю с портретной, коммерческой и творческой ретушью.  
+              Убираю дефекты кожи, улучшаю качество, заменяю фон, корректирую цвет и свет —  
+              всё, чтобы фото выглядело естественно и профессионально.
+            </p>
+            <ul class="tools">
+              <li>Adobe Photoshop</li>
+              <li>Adobe Lightroom</li>
+              <li>ChatGPT</li>
+            </ul>
+          </div>
+          <div class="about-stats">
+            <div class="stat">
+              <span class="stat-num">1,5</span>
+              <span class="stat-label">года опыта</span>
+            </div>
+            <div class="stat">
+              <span class="stat-num">15+</span>
+              <span class="stat-label">проектов в портфолио</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="works" class="works">
+      <div class="container">
+        <div class="section-header">
+          <h2>Мои работы</h2>
+          <p>До и после — результат ретуши</p>
+        </div>
+
+        <!-- Work 1: Freckled beauty - 11 before / 1 after -->
+        <article class="work-card" data-aos>
+          <div class="comparison" data-comparison>
+            <img class="comp-after" src="IMG_2748.jpg" alt="После ретуши" loading="lazy">
+            <div class="comp-before-wrap">
+              <img class="comp-before" src="IMG_2743.jpg" alt="До ретуши" loading="lazy">
+            </div>
+            <div class="comp-handle" aria-hidden="true">
+              <span class="comp-line"></span>
+              <span class="comp-knob">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M8 6L4 12L8 18M16 6L20 12L16 18" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </div>
+            <span class="comp-label before-label">До</span>
+            <span class="comp-label after-label">После</span>
+          </div>
+          <div class="work-info">
+            <h3>Портретная ретушь</h3>
+            <p class="task"><strong>Задачи:</strong> ретушь кожи, устранение блюра, улучшение качества изображения, более качественный макияж.</p>
+            <p class="tools-used"><strong>Инструменты:</strong> Photoshop, ChatGPT</p>
+            <p class="result"><strong>Результат:</strong> чистое, чёткое лицо с естественной текстурой кожи и акцентированным макияжем. Фото готово к использованию в коммерческих и портфолио-проектах.</p>
+          </div>
+        </article>
+
+        <!-- Work 2: Boy guitar - 2 before / 3 after -->
+        <article class="work-card reverse" data-aos>
+          <div class="comparison" data-comparison>
+            <img class="comp-after" src="IMG_2741.jpg" alt="После замены фона" loading="lazy">
+            <div class="comp-before-wrap">
+              <img class="comp-before" src="IMG_2742.jpg" alt="До замены фона" loading="lazy">
+            </div>
+            <div class="comp-handle" aria-hidden="true">
+              <span class="comp-line"></span>
+              <span class="comp-knob">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M8 6L4 12L8 18M16 6L20 12L16 18" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </div>
+            <span class="comp-label before-label">До</span>
+            <span class="comp-label after-label">После</span>
+          </div>
+          <div class="work-info">
+            <h3>Замена фона</h3>
+            <p class="task"><strong>Задачи:</strong> замена фона, устранение зелёных бликов от хромакея, улучшение качества изображения.</p>
+            <p class="tools-used"><strong>Инструменты:</strong> Photoshop</p>
+            <p class="result"><strong>Результат:</strong> естественный осенний фон вместо зелёного экрана. Мальчик гармонично вписан в сцену, без артефактов и цветовых артефактов.</p>
+          </div>
+        </article>
+
+        <!-- Work 3: Black hair - 4 before / 5 after -->
+        <article class="work-card" data-aos>
+          <div class="comparison" data-comparison>
+            <img class="comp-after" src="IMG_2739.jpg" alt="После ретуши" loading="lazy">
+            <div class="comp-before-wrap">
+              <img class="comp-before" src="IMG_2740.jpg" alt="До ретуши" loading="lazy">
+            </div>
+            <div class="comp-handle" aria-hidden="true">
+              <span class="comp-line"></span>
+              <span class="comp-knob">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M8 6L4 12L8 18M16 6L20 12L16 18" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </div>
+            <span class="comp-label before-label">До</span>
+            <span class="comp-label after-label">После</span>
+          </div>
+          <div class="work-info">
+            <h3>Ретушь портрета</h3>
+            <p class="task"><strong>Задачи:</strong> ретушь, устранение синяков под глазами, улучшение качества изображения.</p>
+            <p class="tools-used"><strong>Инструменты:</strong> Photoshop, ChatGPT</p>
+            <p class="result"><strong>Результат:</strong> свежий и отдохнувший взгляд, ровный тон кожи. Портрет выглядит более профессионально и привлекательно.</p>
+          </div>
+        </article>
+
+        <!-- Work 4: Pilot boy - 6 -->
+        <article class="work-card reverse" data-aos>
+          <div class="work-images single">
+            <div class="img-wrap after">
+              <img src="IMG_2738.jpg" alt="После замены фона" loading="lazy">
+              <span class="badge">После</span>
+            </div>
+          </div>
+          <div class="work-info">
+            <h3>Замена фона</h3>
+            <p class="task"><strong>Задачи:</strong> замена фона, устранение зелёных бликов от фона, улучшение качества изображения.</p>
+            <p class="tools-used"><strong>Инструменты:</strong> Photoshop</p>
+            <p class="result"><strong>Результат:</strong> ребёнок в форме пилота на реалистичном фоне аэропорта. Чистое, яркое изображение без следов хромакея.</p>
+          </div>
+        </article>
+
+        <!-- Work 5: Blonde green eyes - 8 before / 7 after -->
+        <article class="work-card" data-aos>
+          <div class="comparison" data-comparison>
+            <img class="comp-after" src="IMG_2737.jpg" alt="После ретуши" loading="lazy">
+            <div class="comp-before-wrap">
+              <img class="comp-before" src="IMG_2736.jpg" alt="До ретуши" loading="lazy">
+            </div>
+            <div class="comp-handle" aria-hidden="true">
+              <span class="comp-line"></span>
+              <span class="comp-knob">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M8 6L4 12L8 18M16 6L20 12L16 18" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </div>
+            <span class="comp-label before-label">До</span>
+            <span class="comp-label after-label">После</span>
+          </div>
+          <div class="work-info">
+            <h3>Ретушь кожи</h3>
+            <p class="task"><strong>Задачи:</strong> ретушь, устранение неровностей на коже, работа с морщинами (сделать менее заметными), улучшение качества изображения.</p>
+            <p class="tools-used"><strong>Инструменты:</strong> Photoshop</p>
+            <p class="result"><strong>Результат:</strong> гладкая, ухоженная кожа с сохранением естественной текстуры. Портрет выглядит свежее и моложе, без эффекта «маски».</p>
+          </div>
+        </article>
+
+        <!-- Work 6: Girl binoculars - 9 before / 10 after -->
+        <article class="work-card reverse" data-aos>
+          <div class="comparison" data-comparison>
+            <img class="comp-after" src="IMG_2734.jpg" alt="После замены фона" loading="lazy">
+            <div class="comp-before-wrap">
+              <img class="comp-before" src="IMG_2735.jpg" alt="До замены фона" loading="lazy">
+            </div>
+            <div class="comp-handle" aria-hidden="true">
+              <span class="comp-line"></span>
+              <span class="comp-knob">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M8 6L4 12L8 18M16 6L20 12L16 18" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </div>
+            <span class="comp-label before-label">До</span>
+            <span class="comp-label after-label">После</span>
+          </div>
+          <div class="work-info">
+            <h3>Замена фона и коррекция</h3>
+            <p class="task"><strong>Задачи:</strong> замена фона, обрезка торчащих волосков, улучшение качества изображения, цветокоррекция.</p>
+            <p class="tools-used"><strong>Инструменты:</strong> Photoshop</p>
+            <p class="result"><strong>Результат:</strong> девочка перенесена в театральную атмосферу. Чистые края, аккуратная причёска, гармоничная цветовая гамма.</p>
+          </div>
+        </article>
+
+        <!-- Work 7: Acne 1 - 12 before / 13 after -->
+        <article class="work-card" data-aos>
+          <div class="comparison" data-comparison>
+            <img class="comp-after" src="IMG_2747.jpg" alt="После ретуши" loading="lazy">
+            <div class="comp-before-wrap">
+              <img class="comp-before" src="IMG_2745.jpg" alt="До ретуши" loading="lazy">
+            </div>
+            <div class="comp-handle" aria-hidden="true">
+              <span class="comp-line"></span>
+              <span class="comp-knob">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M8 6L4 12L8 18M16 6L20 12L16 18" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </div>
+            <span class="comp-label before-label">До</span>
+            <span class="comp-label after-label">После</span>
+          </div>
+          <div class="work-info">
+            <h3>Ретушь кожи</h3>
+            <p class="task"><strong>Задачи:</strong> ретушь, устранение недостатков на коже, улучшение качества изображения.</p>
+            <p class="tools-used"><strong>Инструменты:</strong> Photoshop</p>
+            <p class="result"><strong>Результат:</strong> ровный тон кожи, убраны воспаления и пятна. Сохранена естественность и характер лица.</p>
+          </div>
+        </article>
+
+        <!-- Work 8: Acne 2 - 14 before / 15 after -->
+        <article class="work-card reverse" data-aos>
+          <div class="comparison" data-comparison>
+            <img class="comp-after" src="IMG_2746.jpg" alt="После ретуши" loading="lazy">
+            <div class="comp-before-wrap">
+              <img class="comp-before" src="IMG_2744.jpg" alt="До ретуши" loading="lazy">
+            </div>
+            <div class="comp-handle" aria-hidden="true">
+              <span class="comp-line"></span>
+              <span class="comp-knob">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M8 6L4 12L8 18M16 6L20 12L16 18" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </div>
+            <span class="comp-label before-label">До</span>
+            <span class="comp-label after-label">После</span>
+          </div>
+          <div class="work-info">
+            <h3>Ретушь и цветокоррекция</h3>
+            <p class="task"><strong>Задачи:</strong> ретушь, устранение недостатков на коже, улучшение качества изображения, цветокоррекция.</p>
+            <p class="tools-used"><strong>Инструменты:</strong> Photoshop</p>
+            <p class="result"><strong>Результат:</strong> чистая, сияющая кожа, сбалансированный цвет и свет. Портрет выглядит профессионально и привлекательно.</p>
+          </div>
+        </article>
+
+        <!-- Work 9: Boy with plaster -->
+        <article class="work-card" data-aos>
+          <div class="comparison" data-comparison>
+            <img class="comp-after" src="IMG_2783.jpg" alt="После обработки" loading="lazy">
+            <div class="comp-before-wrap">
+              <img class="comp-before" src="IMG_2782.jpg" alt="До обработки" loading="lazy">
+            </div>
+            <div class="comp-handle" aria-hidden="true">
+              <span class="comp-line"></span>
+              <span class="comp-knob">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M8 6L4 12L8 18M16 6L20 12L16 18" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </div>
+            <span class="comp-label before-label">До</span>
+            <span class="comp-label after-label">После</span>
+          </div>
+          <div class="work-info">
+            <h3>Обработка портрета</h3>
+            <p class="task"><strong>Задачи:</strong> обработка, убрала недостатки (пластырь, пятна с футболки, пыль).</p>
+            <p class="tools-used"><strong>Инструменты:</strong> Photoshop</p>
+            <p class="result"><strong>Результат:</strong> чистое фото без отвлекающих деталей. Пластырь убран, футболка и фон выглядят аккуратно, ребёнок в центре внимания.</p>
+          </div>
+        </article>
+
+        <!-- Work 10: Red-haired young man -->
+        <article class="work-card reverse" data-aos>
+          <div class="comparison" data-comparison>
+            <img class="comp-after" src="IMG_2785.jpg" alt="После ретуши" loading="lazy">
+            <div class="comp-before-wrap">
+              <img class="comp-before" src="IMG_2784.jpg" alt="До ретуши" loading="lazy">
+            </div>
+            <div class="comp-handle" aria-hidden="true">
+              <span class="comp-line"></span>
+              <span class="comp-knob">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M8 6L4 12L8 18M16 6L20 12L16 18" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </div>
+            <span class="comp-label before-label">До</span>
+            <span class="comp-label after-label">После</span>
+          </div>
+          <div class="work-info">
+            <h3>Ретушь портрета</h3>
+            <p class="task"><strong>Задачи:</strong> убрать все покраснения, прыщи, выровнять тон кожи.</p>
+            <p class="tools-used"><strong>Инструменты:</strong> Photoshop</p>
+            <p class="result"><strong>Результат:</strong> ровный тон кожи, без покраснений и воспалений. Портрет выглядит свежим и профессиональным, сохранены естественные черты лица.</p>
+          </div>
+        </article>
+
+        <!-- Work 11: Woman acne -->
+        <article class="work-card" data-aos>
+          <div class="comparison" data-comparison>
+            <img class="comp-after" src="IMG_2787.jpg" alt="После ретуши" loading="lazy">
+            <div class="comp-before-wrap">
+              <img class="comp-before" src="IMG_2786.jpg" alt="До ретуши" loading="lazy">
+            </div>
+            <div class="comp-handle" aria-hidden="true">
+              <span class="comp-line"></span>
+              <span class="comp-knob">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M8 6L4 12L8 18M16 6L20 12L16 18" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </div>
+            <span class="comp-label before-label">До</span>
+            <span class="comp-label after-label">После</span>
+          </div>
+          <div class="work-info">
+            <h3>Ретушь кожи</h3>
+            <p class="task"><strong>Задачи:</strong> ретушь, убрать прыщи и выровнять тон кожи.</p>
+            <p class="tools-used"><strong>Инструменты:</strong> Photoshop</p>
+            <p class="result"><strong>Результат:</strong> гладкая, ровная кожа без воспалений. Сохранена естественность и характер лица, портрет готов к использованию.</p>
+          </div>
+        </article>
+
+        <!-- Work 12: School group -->
+        <article class="work-card reverse" data-aos>
+          <div class="comparison landscape" data-comparison>
+            <img class="comp-after" src="IMG_2789.jpg" alt="После обработки" loading="lazy">
+            <div class="comp-before-wrap">
+              <img class="comp-before" src="IMG_2788.jpg" alt="До обработки" loading="lazy">
+            </div>
+            <div class="comp-handle" aria-hidden="true">
+              <span class="comp-line"></span>
+              <span class="comp-knob">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M8 6L4 12L8 18M16 6L20 12L16 18" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </div>
+            <span class="comp-label before-label">До</span>
+            <span class="comp-label after-label">После</span>
+          </div>
+          <div class="work-info">
+            <h3>Групповое фото</h3>
+            <p class="task"><strong>Задачи:</strong> кадрирование изображения, заменить лица некоторых детей на более радостные (взять лица с других кадров), выполнить небольшую ретушь одежды и лиц, убрать с фона всё лишнее.</p>
+            <p class="tools-used"><strong>Инструменты:</strong> Lightroom, Photoshop</p>
+            <p class="result"><strong>Результат:</strong> аккуратно кадрированный кадр, все дети с приятными выражениями лиц, чистый фон без лишних деталей. Фото готово для школьного альбома.</p>
+          </div>
+        </article>
+
+        <!-- Work 13: Product bag -->
+        <article class="work-card" data-aos>
+          <div class="comparison" data-comparison>
+            <img class="comp-after" src="IMG_2799.jpg" alt="После обработки" loading="lazy">
+            <div class="comp-before-wrap">
+              <img class="comp-before" src="IMG_2798.jpg" alt="До обработки" loading="lazy">
+            </div>
+            <div class="comp-handle" aria-hidden="true">
+              <span class="comp-line"></span>
+              <span class="comp-knob">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M8 6L4 12L8 18M16 6L20 12L16 18" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </div>
+            <span class="comp-label before-label">До</span>
+            <span class="comp-label after-label">После</span>
+          </div>
+          <div class="work-info">
+            <h3>Предметная ретушь</h3>
+            <p class="task"><strong>Задачи:</strong> настроить баланс белого, сделать сумку более чёрной, убрать заломы и вмятины, сделать кроссовки более белыми, убрать ненужные элементы на фоне интерьера.</p>
+            <p class="tools-used"><strong>Инструменты:</strong> Photoshop</p>
+            <p class="result"><strong>Результат:</strong> чистый коммерческий кадр — глубокий чёрный цвет сумки без заломов, белоснежные кроссовки, аккуратный фон без отвлекающих деталей. Фото готово для каталога и маркетплейсов.</p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="container">
+        <h2>Давайте работать вместе</h2>
+        <p>Есть задача по ретуши? Напишите мне — обсудим детали и сроки.</p>
+        <a href="https://t.me/yyeessww" target="_blank" rel="noopener" class="btn btn-primary btn-lg">
+          Написать в Telegram
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© 2026 Дарья · Ретушь фотографий</p>
+      <a href="https://t.me/yyeessww" target="_blank" rel="noopener">@yyeessww</a>
+    </div>
+  </footer>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox-close" aria-label="Закрыть">&times;</button>
+    <button class="lightbox-prev" aria-label="Предыдущее">&#10094;</button>
+    <button class="lightbox-next" aria-label="Следующее">&#10095;</button>
+    <div class="lightbox-content">
+      <img src="" alt="" id="lightbox-img">
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
